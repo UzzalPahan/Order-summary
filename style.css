@@ -1,0 +1,136 @@
+    
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    background: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+    font-family: 'Red Hat display', sans-serif; */
+}
+::selection {
+    background-color: cornflowerblue;
+}
+main {
+    background-color: white;
+    text-align: center;
+    width: 450px;
+    height: 691px;
+    border-radius: 20px;
+    box-shadow: rgb(56 41 224 / 20%) 0px 0.875rem 0.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: move 2s forwards;
+}
+p {
+    font-size: 16px;
+    margin: 42px;
+    margin-top: 2px;
+    opacity: .7;
+    line-height: 25px;
+}
+h1 {
+    margin-top: 40px;
+}
+img {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+.music-part {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-evenly;
+    border-radius: 12px;
+    position: relative;
+    left: 42px;
+    bottom: 21px;
+    height: 82px;
+}
+button {
+    margin-bottom: 0.875rem;
+    box-shadow: rgb(56 41 224 / 20%) 0px 0.875rem 0.875rem;
+    background-color: rgb(56, 41, 224);
+    color: rgb(245, 247, 255);
+    border-radius: 0.75em;
+    outline: none;
+    border: none;
+    width: 360px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    transition: .6s ease;
+}
+button:hover {
+    opacity: .7;
+}
+h4 {
+    opacity: .4;
+    transition: .6s ease;
+    cursor: pointer;
+}
+h4:hover {
+    opacity: 1;
+}
+.music-part img {
+    position: relative;
+    right: 23px;
+}
+h2 {
+    position: relative;
+    right: 52px;
+    top: 4px;
+    font-size: 14px;
+}
+h3 {
+    position: relative;
+    right: 52px;
+    bottom: 10px;
+    opacity: .6;
+    font-size: 14px;
+}
+a {
+    color: hsl(245, 75%, 52%);
+    position: relative;
+    left: 22px;
+    font-weight: 700;
+}
+@keyframes move {
+    0% {
+        transform:translate(-500px) ;
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+@media (max-width: 700px) {
+    body {
+        padding: 20px;
+    }
+    main {
+        width: 420px;
+        height: 620px;
+    }
+    button {
+        width: 290px;
+    }
+    .music-part img {
+        right: 10px;
+    }
+    a {
+        left: 12px;
+    }
+    h2 {
+        right: 22px;
+    }
+    h3 {
+        right: 22px;
+    }
+}
